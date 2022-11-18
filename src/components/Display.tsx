@@ -38,8 +38,8 @@ interface Props  {
 
       <form action="#" className="form-search d-flex align-items-stretch " data-aos="fade-up" data-aos-delay="200">
             <input type="text" className="form-control" placeholder="Product name" />
-            
-            <button className="button-19" role="button">{search}</button>
+            <button type="submit" className="btn ">Search</button>
+            {/* <button className="button-19" role="button">{search}</button> */}
           </form>
       </div>
       
