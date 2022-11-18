@@ -2,6 +2,7 @@ import React from 'react'
 import hero from '../images/hero-img.svg'
 
 
+
 function Hero() {
   return (
     <div>

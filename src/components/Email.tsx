@@ -1,8 +1,19 @@
 import React from 'react'
+import Display from './Display'
+
+
 
 const Email = () => {
-  return (
-    <div>Email</div>
+  return (<>
+   
+      <Display
+       description="hello"
+       search="search"
+
+    />
+  </>
+
+  
   )
 }
 export default Email

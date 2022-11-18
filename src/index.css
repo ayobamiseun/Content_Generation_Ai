@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -17,7 +18,14 @@ section {
   overflow: hidden;
 }
 
-
+.navbar {
+  background-color: #008374;
+}
+.nav-link a {
+  text-decoration: none;
+ color: #fff;
+ font-weight: 600;
+}
 .hero {
   width: 100%;
   position: relative;
@@ -155,4 +163,112 @@ section {
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
   color: #fff;
+}
+
+
+/* form */
+.form-search {
+  
+  padding: 10px;
+  border-radius: 10px;
+  padding-top: 200px;
+  width: 80%;
+  margin: auto;
+}
+input {
+  background-color: #008374;
+}
+
+ .form-control {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  /* border: none; */
+  margin-right: 10px;
+  border: none !important;
+ 
+  background-color: #fff !important;
+}
+
+ form .form-control:hover,
+ form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ form .btn-primary {
+  background-color: #008374;
+  padding: 15px 30px;
+}
+
+ form .btn-primary:hover {
+  background-color: #008374;
+}
+
+
+
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #108a7c;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+    margin-left: -50px;
+    height: 50px;
+    width: 200px;
+  /* width: 100%; */
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #94e3da;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
 }
