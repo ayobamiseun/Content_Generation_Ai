@@ -1,6 +1,6 @@
-# OpenAI Impressive Emails, Tweets and Product infos generator.
+# OpenAI Impressive Emails, Tweets, and Product Infos generator.
 
-This is a demo app using OpenAI to generate Email based on a text input.
+This is a demo app using OpenAI to generate Email based on  text input.
 
 Based on [OpenAI's quickstart example](https://beta.openai.com/docs/quickstart).
 
