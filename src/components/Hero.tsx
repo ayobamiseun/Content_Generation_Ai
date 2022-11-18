@@ -5,7 +5,7 @@ import hero from '../images/hero-img.svg'
 function Hero() {
   return (
     <div>
-        <section id="hero" class="hero" > 
+        <section id="hero" className="hero" > 
     <div className="container position-relative">
       <div className="row gy-5" data-aos="fade-in">
         <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
