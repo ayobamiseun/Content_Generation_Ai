@@ -5,12 +5,8 @@ import Display from './Display'
 
 const Email = () => {
   return (<>
-   
-      <Display
-       description="hello"
-       search="search"
-
-    />
+      
+      <Display />
   </>
 
   
