@@ -9,8 +9,7 @@ function Tweets() {
     
 
       <Display
-       description="Generate the detail you want to know by inputting the product name"
-       search="search product"
+     
 
     />
   

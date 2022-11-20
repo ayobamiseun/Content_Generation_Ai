@@ -1,4 +1,5 @@
 import React from 'react'
+import Navmenu from './Navmenu'
 import Display from './Display'
 
 // const { Configuration, OpenAIApi } = require("openai");
@@ -20,13 +21,15 @@ import Display from './Display'
 
  const ProductDescription = () => {
   return (
+    
     <div>
-     
+<Navmenu/>
       <Display
-       description="Generate the detail you want to know by inputting the product name"
-       search="search product"
-
+      
+        
     />
+        {/* <p> {heading}</p>
+          <p> {response}</p> */}
   </div>
   )
 }

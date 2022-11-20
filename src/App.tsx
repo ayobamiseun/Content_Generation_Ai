@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Home, Email, Tweets, ProductDescription,Nav } from './components';
+import { Home, Email, Tweets, ProductDescription,Nav} from './components';
 
 import {
   BrowserRouter,
@@ -9,6 +9,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Display from './components/Display';
 
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Route path="email" element={<Email />} />
     
         <Route path="tweets" element={<Tweets />} />
+        <Route path="display" element={<Display  />} />
         <Route path="products" element={<ProductDescription  />} />
       </Routes>
     </BrowserRouter>
