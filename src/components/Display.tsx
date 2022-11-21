@@ -10,47 +10,17 @@ function Display() {
     heading: "",
     response: "hello response"
  })
-
-  // @ts-ignore
-
-
-        // open ai api
-
-         
-    // const configuration = new Configuration({
-//   apiKey: process.env.OPENAI_API_KEY,
-// });
-// const openai = new OpenAIApi(configuration);
-
-// const response = await openai.createCompletion({
-//   model: "text-davinci-002",
-//   prompt: "Tell me all i need to know about: ${products}",
-//   temperature: 0.8,
-//   max_tokens: 143,
-//   top_p: 1,
-//   frequency_penalty: 0, 
-//   presence_penalty: 0,
-// }). then((response) => {
-//     setProducts ({
-//         heading: `AI Product Description Suggestion for: ${formDataObj.product.Name}`,
-//         response: `${response.data.choices[0].text}`
-//     })
-// })
-// ;
-
- 
-       // @ts-ignore
-    
-    
-       // @ts-ignore
+   // @ts-ignore
        const handleChange  = (e) => {
 
         setProducts({...products, heading: e.target.value})
 
        }
- // @ts-ignore
+     // @ts-ignore
        const onFormSubmit = (e) => {
         e.preventDefault()
+
+        products.heading = "";
 
         const formData = new FormData(e.target), 
         formDataObj = Object.fromEntries(formData.entries())
@@ -60,28 +30,29 @@ function Display() {
         console.log(brand)
          // @ts-ignore
          const configuration = new Configuration({
-  apiKey: "",
-});
- // @ts-ignore
-const openai = new OpenAIApi(configuration);
- // @ts-ignore
-openai.createCompletion({
-  model: "text-davinci-001",
-  prompt: `Tell me all i need to know about: ${brand}`,
-  temperature: 0.8,
-  max_tokens: 100,
-  top_p: 1,
-  frequency_penalty: 0, 
-  presence_penalty: 0,
-   // @ts-ignore
-}). then((response) => {
-    setProducts ({
-         // @ts-ignore
-        heading: `AI Product Description Suggestion for: ${brand}`,
-        response: `${response.data.choices[0].text}`
-    })
-})
-;
+       
+            apiKey: "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",
+          });
+          //@ts-ignore
+          const openai = new OpenAIApi(configuration);
+          // @ts-ignore
+          openai.createCompletion({
+            model: "text-davinci-001",
+            prompt: `Tell me all i need to know about: ${brand}`,
+            temperature: 0.8,
+            max_tokens: 100,
+            top_p: 1,
+            frequency_penalty: 0, 
+            presence_penalty: 0,
+            // @ts-ignore
+          }). then((response) => {
+              setProducts ({
+                  // @ts-ignore
+                  heading: `AI Product Description Suggestion for: ${brand}`,
+                  response: `${response.data.choices[0].text}`
+              })
+          })
+          ;
        }
   return (
     <div>
@@ -94,7 +65,7 @@ openai.createCompletion({
              placeholder="Product name"
              name="productName"
               // @ts-ignore
-            //  value={products.heading}
+             value={products.heading}
              // @ts-ignore
              onChange={handleChange}
            
@@ -102,10 +73,18 @@ openai.createCompletion({
             <button type="submit" className="btn ">Search</button>
             {/* <button className="button-19" role="button">{search}</button> */}
           </form>
-          
-          <p> {products.heading}</p>
-          <p> {products.response}</p>
+          <section id="result" className="result">
+      <div className="container" data-aos="zoom-out">
 
+        <div className="row justify-content-center">
+          <div className="col-lg-8 text-center">
+            <h3>The result will be display</h3>
+            <p> {products.response}.</p>
+            </div>
+        </div>
+
+      </div>
+    </section>
 
     </div>
   )
