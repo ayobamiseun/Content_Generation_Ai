@@ -1,11 +1,11 @@
 import React from 'react'
-import  CollapsibleExample  from './Navmenu'
+import  Nav  from './Navmenu'
 import Hero from './Hero'
 
 const Home = () => {
   return (
     <div>
-        <CollapsibleExample />
+        <Nav />
         <Hero />
 
     </div>

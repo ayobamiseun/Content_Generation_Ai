@@ -14,7 +14,7 @@ function CollapsibleExample() {
 
     <Navbar collapseOnSelect fixed="top"  expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Content-Generator</Navbar.Brand>
+        <Navbar.Brand> <Link to="/">Content-Generator</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
