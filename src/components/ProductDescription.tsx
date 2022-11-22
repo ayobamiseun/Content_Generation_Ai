@@ -24,7 +24,7 @@ const { Configuration, OpenAIApi } = require("openai");
         const brand = formDataObj.productName;
         console.log(brand)
          const configuration = new Configuration({
-            apiKey: "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",
+          apiKey:  process.env.OPENAI_API_KEY,
           });
           const openai = new OpenAIApi(configuration);
         
